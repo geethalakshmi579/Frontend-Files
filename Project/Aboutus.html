@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="astyle.css">
+</head>
+<body>
+     <!--Header-->
+   <nav style="box-shadow: 10px 10px 10px 10px rgb(143, 141, 141);">
+    <ul>
+        <li class="logo">Ikart</li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productpage.html">Products</a></li>
+            <li><a href="categories.html">Category</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </div>
+        <li class="search-icon">
+            <input type="search" placeholder="Search">
+            <label class="icon">
+              <span class="fas fa-search"></span>
+            </label>
+            <li><a href="cartpage.html"><img src="Images/cart1.png" alt="" style="width: 50px;border-radius: 50%;margin-left: 30px;"></a></li>
+          </li>
+    </ul>
+</nav>
+<script>
+    $('nav ul li.btn span').click(function(){
+      $('nav ul div.items').toggleClass("show");
+      $('nav ul li.btn span').toggleClass("show");
+    });
+  </script>
+  <!--Ending of Header-->
+
+  <!-- ==============about starts here============== -->
+<section class="about py-5 my-5" id="about" >
+    <div class="container" style="height: 990px;">
+    <div class="section_title text-center mb-5">
+    <h1 class="text-capitalize">About Us</h1>
+</div>
+<div class="row" style="display: flex;">
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-12">
+<img src="Images/about.jpg" class="img1 img-fluid rounded shadow-lg" alt="about us image">
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-12">
+<div class="title">
+<h3>Our Mission</h3>
+</div>
+<div class="about_text mt-sm-5">
+<p style="color: black;">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+sed quidem eum
+molestiae sunt praesentium enim ea magni ipsam aliquid,
+quibusdam, neque minus
+necessitatibus maxime quos facere laborum illo. Eaque!
+</p>
+<p style="color: black;">
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nisi
+natus, rem
+accusamus sunt numquam debitis et nemo mollitia saepe veniam
+illo magnam impedit?
+Odio iure reprehenderit nihil eius quibusdam quisquam, tempora
+cum asperiores
+similique sequi rem, exercitationem perspiciatis non!
+</p>
+<p style="color: black;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+provident odio
+tempora natus et consequatur distinctio, minima, porro libero
+officia, eos
+voluptatibus ad dolore expedita repudiandae. Vel exercitationem
+corrupti rem nisi,
+fuga deserunt suscipit minus quisquam voluptatem?
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<!-- ==============testimonial starts here============== -->
+<section class="text-center bg-info my-5 py-5 rounded">
+  <input type="radio" name="slider" id="slide2">
+  <input type="radio" name="slider" id="slide3">
+  <input type="radio" name="slider" id="slide1">
+  <div id="slides">
+     <div id="overflow">
+        <div class="inner">
+           <div class="slide slide_1">
+              <div class="slide-content">
+                <img src="Images/profile1.jpg" class="img img-fluid rounded shadow-lg" alt="about us image">
+                <h4 class="font-weight-bold">Anna Deynah</h4>
+                <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+                 <p> Nemo enim ipsam
+                  voluptatem quia
+                  voluptas sit
+                  aspernatur aut
+                  odit
+                  aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione
+                  voluptatem sequi
+                  nesciunt. </p>
+              </div>
+           </div>
+           <div class="slide slide_2">
+              <div class="slide-content">
+                <img src="Images/profile2.jpg" class="img img-fluid rounded shadow-lg" alt="about us image">
+                <h4 class="font-weight-bold">Maria Kate</h4>
+                <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+                <p>Nemo enim ipsam
+                  voluptatem quia
+                  voluptas sit
+                  aspernatur aut
+                  odit
+                  aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione
+                  voluptatem sequi
+                  nesciunt.</p>
+              </div>
+           </div>
+           <div class="slide slide_3">
+              <div class="slide-content">
+                <img src="Images/profile3.jpg" class="img img-fluid rounded shadow-lg" alt="about us image">
+                <h4 class="font-weight-bold">John Doe</h4>
+                <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>                  
+                 <p>Nemo enim ipsam
+                  voluptatem quia
+                  voluptas sit
+                  aspernatur aut
+                  odit
+                  aut fugit, sed quia consequuntur magni dolores eos qui
+                  ratione
+                  voluptatem sequi
+                  nesciunt.</p>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div id="controls">
+     <label for="slide1"></label>
+     <label for="slide2"></label>
+     <label for="slide3"></label>
+  </div>
+  <div id="bullets">
+     <label for="slide1"></label>
+     <label for="slide2"></label>
+     <label for="slide3"></label>
+  </div>
+</section>
+</div>
+        <!-- ==============testimonial ends here============== -->
+
+<div class="row mt-5" style="display: flex;margin-left: 30px;">
+<div class="col-md-33 col-6">
+<div class="border border-dark rounded shadow text-center p-3">
+<div class="mb-4">
+<i class="far fa-credit-card fa-3x"></i>
+</div>
+<div class="b">
+<h5>Credit Card Support</h5>
+</div>
+</div>
+</div>
+<div class="col-md-33 col-6 mt-small-2 mb-small-2">
+<div class="border border-primary rounded shadow text-center p-3">
+<div class="mb-4">
+<i class="fas fa-laptop fa-3x"></i>
+</div>
+<div class="b" style="margin-left: 50px;">
+<h5>Online Order</h5>
+</div>
+</div>
+</div>
+<div class="col-md-33 col-6">
+<div class="border border-success rounded shadow text-center p-3">
+<div class="mb-4">
+<i class="fas fa-shipping-fast fa-3x"></i>
+</div>
+<div class="b" style="margin-left: 50px;">
+<h5>Fast Delivery</h5>
+</div>
+</div>
+</div>
+<div class="col-md-33 col-6">
+    <div class="border border-danger rounded shadow text-center p-3">
+    <div class="mb-4">
+    <i class="fas fa-gifts fa-3x"></i>
+    </div>
+    <div class="b" style="margin-left: 50px;">
+    <h5>Product with Gift</h5>
+    </div>
+    </div>
+    </div>
+    </div>
+   </div>
+    </section>
+     <!--==============about ends here============== -->        
+  <!--Footer-->
+<section class="footer_section pt-5 pb-2" id="footer_section">    
+    <footer>      
+      <div class="contain" style=" height: 200px; background-color: rgb(184, 182, 179);
+      padding-top: 30px;margin-top: 50px;">       
+         <div class="row" style="display: flex;">          
+           <div class="col-md-3 col-6 pl-5 pl-small-15" style=" width: 300px; height: 165px; margin-left: 110px;">           
+              <div class="footer_title">              
+                <a href="#"><img src="Images/icon.jpg" width="50px; class="img img-fluid" alt="logo" style="padding-right: 20px;margin-left: 120px;"></a>           
+               </div>           
+                <div style="color: black;padding-top: 5px;font-size: 15px;">             
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam estillum ipsum quas ad              dignissimos magni veritatis natus voluptatem.           
+                   </div>         
+                   </div>         
+                    <div class="col-md-3 col-6" style="margin-left: 60px;">           
+                       <div class="footer_title pt-3 mb-3">             
+                          <h3 style="padding-left: 50px; padding-bottom: 10px;color: black;">Quick Links</h3>            
+                        </div>            
+                        <div class="footer_links">             
+                           <ul id="f">               
+                             <li><a href="about.html">About</a></li>               
+                             <li><a href="javascript:;">Offers & Discounts</a></li>               
+                            <li><a href="javascript:;">Get Coupon</a></li>               
+                              <li><a href="contact.html">Contact Us</a></li>             
+                             </ul>           
+                             </div>          
+                          </div>
+          <div class="col-md-3 col-6" style="padding-left: 70px;">          
+             <div class="footer_title pt-3 mb-3">             
+                <h3 style="padding-left: 50px; padding-bottom: 10px;color: black;">New Products</h3>            
+              </div>           
+               <div class="footer_links">             
+                  <ul id="f">               
+                     <li><a href="javascript:;" >Woman Cloth</a></li>                
+                     <li><a href="javascript:;" >Fashion Accessories</a></li>               
+                      <li><a href="javascript:;" >Man Accessories</a></li>               
+                       <li><a href="javascript:;" >Rubber made Toys</a></li>             
+                       </ul>           
+                       </div>          
+                      </div>         
+                       <div class="col-md-3 col-6" style="padding-left: 80px;">            
+                         <div class="footer_title pt-3 mb-3">              
+                           <h3 style="padding-left: 50px; padding-bottom: 10px;color: black;">Support</h3>            
+                          </div>            
+                          <div class="footer_links">             
+                             <ul id="f">               
+                                <li><a href="javascript:;" >Frequently Asked Questions</a></li>               
+                                 <li><a href="javascript:;">Terms & Conditions</a></li>                
+                                 <li><a href="javascript:;" >Privacy Policy</a></li>               
+                                  <li><a href="javascript:;" >Report a Payment Issue</a></li>             
+                                 </ul>           
+                                 </div>          
+                                </div>        
+                              </div>     
+                             </div>      
+                             <div class="border-top">       
+                                <h6 class="text-center mt-3" style="color: rgb(0, 0, 0); padding-top: 20px;margin-left: 650px;">Copyright ©2020 All rights reserved        
+                            </h6>     
+                           </div>    
+                          </footer>  
+                        </section>
+                        <a id="top"></a>
+                        <a href="#" style="text-decoration: none;"><img src="Images/top.png" alt="" class="t" style="width: 60px;
+                        margin-left: 1200px;
+                        position: fixed;
+                        bottom: -4px;right: 10px;border-radius: 50%;"></a>
+</body>
+</html>

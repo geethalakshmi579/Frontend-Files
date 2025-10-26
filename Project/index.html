@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <nav style="box-shadow: 10px 10px 10px 10px rgb(143, 141, 141);">
+        <ul>
+            <li class="logo">Ikart</li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+                <li><a href="#" class="n">Home</a></li>
+                <li><a href="productpage.html" class="n">Products</a></li>
+                <li><a href="categories.html" class="n">Category</a></li>
+                <li><a href="Aboutus.html" class="n">About Us</a></li>
+                <li><a href="contactus.html" class="n">Contact Us</a></li>
+            </div>
+            <li class="search-icon">
+                <input type="search" placeholder="Search">
+                <label class="icon">
+                  <span class="fas fa-search"></span>
+                </label>
+                <li><a href="cartpage.html"><img src="Images/cart1.png" alt="" style="width: 50px;border-radius: 50%;"></a></li>
+              </li>
+        </ul>
+    </nav>
+    <script>
+        $('nav ul li.btn span').click(function(){
+          $('nav ul div.items').toggleClass("show");
+          $('nav ul li.btn span').toggleClass("show");
+        });
+      </script>
+
+<!--Image Slider-->
+<div class="w3-content w3-display-container" style="width: 754px;height: 504px;">
+  <img class="mySlides" src="Images/b3.jpg">
+  <img class="mySlides" src="Images/b4.jpg">
+  <img class="mySlides" src="Images/b1.jpg" style="height: 500px;">
+
+  <button class="w3-button w3-black w3-display-left" style="position: absolute;top: 390px;left: 10px;"
+      onclick="plusDivs(-1)"><img src="Images/left.jpg" alt="" style="height: 20px;"></button>
+  <button class="w3-button w3-black w3-display-right" style="position: absolute;top: 390px;right: 10px;"
+      onclick="plusDivs(1)"><img src="Images/right.jpg" alt="" style="height: 20px;"></button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+ <!--Ending of Header-->
+<!--Shop by category-->
+      <div class="container-fluid" style="margin-top: 100px;">     
+         <div class="section_title text-center mb-5">        
+        <h2 class="text-capitalize">Shop By Category</h2>     
+       </div>
+       <div class="row" style="margin-left: 50px;">        
+         <div class="col-md-4 col-12">          
+         <div class="card bg-dark text-white">           
+            <a href="categories.html">             
+            <img class="card-img img img-fluid" src="Images/collection_01.png" alt="Card image" style="padding-right: 50px;border-radius: 20px;">           
+           </a>          
+          </div>       
+         </div>        
+         <div class="col-md-4 col-12">         
+              <div class="card bg-dark text-white">           
+          <a href="categories.html">
+            <img class="card-img img img-fluid" src="images/collection_02.png" alt="Card image" style="padding-left: 30px;border-radius: 20px;">           
+           </a>          
+          </div>       
+           </div>             
+              </div>   
+           </div>
+    <!--Latest Products-->
+    <section class="products py-5 my-5 bg-light" id="products">    
+      <div class="container " style="height: 500px;">      
+        <div class="section_title text-center mb-5">        
+          <h1 class="text-capitalize" style="padding-bottom: 20px;padding-right: 50px;">Latest Products</h1>      
+        </div> 
+        <div class="row mb-5" style="padding-left: 300px;">     
+           <div class="col-md-4 col-12" style="background-color: white; width: 250px; margin-left: 100px;
+           box-shadow: 2px 2px 2px 2px rgb(179, 175, 175);border-radius: 20px;">          
+             <div class="single_product shadow text-center p-1">           
+                <div class="product_img">
+                  <a href="productdetail.html"><img src="Images/products/iPhone/iphone1.jpeg"class="img img-fluid" 
+                  style="width: 200px; 
+                  height: 305px;" alt=""></a>              
+                  <div class="new_product">              
+                      <span class="badge py-2 px-3 badge-pill badge-danger">New</span>              
+                  </div>           
+                 </div>           
+                  <div class="product-caption my-3">             
+                     <div class="product-ratting">               
+                     <i class="fas fa-star"></i>               
+                      <i class="fas fa-star"></i>                
+                      <i class="fas fa-star"></i>               
+                       <i class="far fa-star low-star"></i>               
+                        <i class="far fa-star low-star"></i>              
+                      </div>             
+                       <h4><a style="padding-right: 50px;" href="productdetail.html">I Phone</a></h4>             
+                        <div class="price">               
+                           <b><span class="mr-1" style="color: black;">₹</span><span style="color: black;">56,600</span></b>             
+                         </div>           
+                         </div>         
+                         </div>        
+                        </div>        
+                        <div class="col-md-4 col-12" style="background-color: white; width: 250px; margin-left: 23px;box-shadow: 2px 2px 2px 2px rgb(179, 175, 175);border-radius: 20px;">          
+                          <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">           
+                          <div class="product_img">              
+                        <a href="productdetail.html"><img src="Images/products/headphone/headphone1.jpeg" style="width: 252px;padding-right: 80px;padding-top: 10px;height: 300px;" class="img img-fluid" alt=""></a>             
+                         <div class="new_product">                
+                           <span class="badge py-2 px-3 badge-pill badge-danger">New</span>             
+                           </div>            
+                          </div>            
+                          <div class="product-caption my-3">             
+                             <div class="product-ratting">               
+                                <i class="far fa-star"></i>               
+                                 <i class="far fa-star"></i>               
+                                  <i class="far fa-star"></i>               
+                                   <i class="far fa-star low-star"></i>               
+                                    <i class="far fa-star low-star"></i>             
+                   </div>              
+                   <h4><a href="productdetail.html" style="padding-right: 50px;">Headphone</a></h4>             
+                    <div class="price">
+                      <b><span class="mr-1" style="color: black;">₹</span><span style="color: black; padding-right: 10px;">1,600</span></b>             
+                     </div>           
+                     </div>          
+                    </div>       
+                   </div>       
+                    <div class="col-md-4 col-12"style="background-color: white; width: 250px; margin-left: 23px;
+                    box-shadow: 2px 2px 2px 2px rgb(179, 175, 175);border-radius: 20px;">          
+                      <div class="single_product shadow text-center p-1">           
+                         <div class="product_img">             
+                            <a href="productdetail.html"><img src="Images/products/sumsung/samsung1.jpeg" style="width: 137px;" class="img img-fluid" alt=""></a>             
+                             <div class="new_product">                
+                               <span class="badge py-2 px-3 badge-pill badge-danger">New</span>             
+                             </div>           
+                             </div>           
+                              <div class="product-caption my-3">             
+                                 <div class="product-ratting">
+                                   <i class="far fa-star"></i>               
+                                    <i class="far fa-star"></i>                
+                                    <i class="far fa-star"></i>               
+                                     <i class="far fa-star low-star"></i>               
+                                      <i class="far fa-star low-star"></i>              
+                                    </div>              
+                                    <h4><a href="productdetail.html" style="padding-right: 50px;">Samsung</a></h4>             
+                                     <div class="price">               
+                                        <b><span class="mr-1" style="color: black;">₹</span><span style="color: black;">11,000</span></b>             
+                                       </div>            
+                                      </div>    
+                    </div>       
+                   </div>     
+                   </div>     
+    <!--Features-->
+    <section class="feature py-5 mt-5" id="feature" style="margin-top: 50px;">
+      <div class="section_title text-center mb-5">       
+        <h2 class="txt" >Our Features</h2>     
+       </div>
+  <div class="contain" >          
+        <div class="row text-white">        
+         <div class="col-md-4 col-12 shadow p-3" style="background-color: aqua; border-radius: 10px;height: 300px;">         
+           <div class="text-center">            
+             <div class="mb-4">             
+                <i class="fas fa-shipping-fast fa-3x mb-3 pt-2"></i>             
+                 <div>               
+                    <h3 style="text-align: center; padding-bottom: 20px;height: 20px;">Free Shipping Method</h3>              
+                </div>           
+               </div>           
+                <div>             
+                  <p style="color: black;margin-top: 20px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit idaccusamus quas maxime              expedita nostrum atque delectus deleniti ad modi repellat debitis ipsamquisquam amet, odit voluptate              recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimosid magnam debitis vitae? </p>
+                  </div>         
+                 </div>        
+                </div>       
+                  <div class="col-md-4 col-12 shadow p-3 " style="background-color: aqua; border-radius: 10px;height: 300px;margin-left: 10px;">          
+                <div class="text-center">            
+                 <div class="mb-4">
+                    <i class="fas fa-lock fa-3x mb-3 pt-2"></i>             
+                      <div>               
+                         <h3 style="text-align: center; padding-bottom: 20px;">Secure Payment System</h3>             
+                       </div>           
+                       </div>           
+                        <div>           
+                            <p style=" color: black;">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit idaccusamus quas maxime              expedita nostrum atque delectus deleniti ad modi repellat debitis ipsamquisquam amet, odit voluptate              recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimosid magnam debitis vitae? </p>           
+                          </div>         
+                             </div>       
+                      </div>
+                      <div class="col-md-4 col-12 shadow p-3" style="background-color: aqua; border-radius: 10px;height: 300px;margin-left: 10px;">         
+                         <div class="text-center">           
+                            <div class="mb-4">             
+                               <i class="fas fa-headphones fa-3x mb-3 pt-2"></i>             
+                                <div>               
+                                   <h3>24/7 Support</h3>             
+                      </div>           
+                     </div>           
+                      <div style="color: black;margin-top: 20px;">             
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit idaccusamus quas maxime              expedita nostrum atque delectus deleniti ad modi repellat debitis ipsamquisquam amet, odit voluptate              recusandae distinctio? Perferendis tenetur quibusdam porro dolor dignissimosid magnam debitis vitae?           
+                         </div>         
+                         </div>       
+                         </div>     
+                         </div>   
+                         </div>        
+                     
+  </section>
+  <!--Footer-->
+  <section class="footer_section pt-5 pb-2" id="footer_section">    
+    <footer>      
+      <div class="container" style=" height: 200px; background-color: rgb(184, 182, 179);
+      padding-top: 30px;margin-top: 100px;">       
+         <div class="row">          
+           <div class="col-md-3 col-6 pl-5 pl-small-15" style=" width: 300px; height: 165px; margin-left: 110px;">           
+              <div class="footer_title">              
+                <a href="#"><img src="Images/icon.jpg" width="50px;" class="img img-fluid" alt="logo" style="padding-right: 20px;"></a>           
+               </div>           
+                <div style="color: black;padding-top: 5px;font-size: 15px;">             
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam estillum ipsum quas ad              dignissimos magni veritatis natus voluptatem.           
+                   </div>         
+                   </div>         
+                    <div class="col-md-3 col-6" style="margin-left: 60px;">           
+                       <div class="footer_title pt-3 mb-3">             
+                          <h3 style="padding-left: 50px; padding-bottom: 10px;">Quick Links</h3>            
+                        </div>            
+                        <div class="footer_links" style="padding: 4px;">             
+                           <ul id="f">               
+                             <li><a href="about.html">About</a></li>               
+                             <li><a href="javascript:;">Offers & Discounts</a></li>               
+                            <li><a href="javascript:;">Get Coupon</a></li>               
+                              <li><a href="contact.html">Contact Us</a></li>             
+                             </ul>           
+                             </div>          
+                          </div>
+          <div class="col-md-3 col-6" style="padding-left: 70px;">          
+             <div class="footer_title pt-3 mb-3">             
+                <h3 style="padding-left: 50px; padding-bottom: 10px;">New Products</h3>            
+              </div>           
+               <div class="footer_links">             
+                  <ul id="f">               
+                     <li><a href="javascript:;">Woman Cloth</a></li>                
+                     <li><a href="javascript:;">Fashion Accessories</a></li>               
+                      <li><a href="javascript:;">Man Accessories</a></li>               
+                       <li><a href="javascript:;">Rubber made Toys</a></li>             
+                       </ul>           
+                       </div>          
+                      </div>         
+                       <div class="col-md-3 col-6" style="padding-left: 80px;">            
+                         <div class="footer_title pt-3 mb-3">              
+                           <h3 style="padding-left: 50px; padding-bottom: 10px;">Support</h3>            
+                          </div>            
+                          <div class="footer_links">             
+                             <ul id="f">               
+                                <li><a href="javascript:;">Frequently Asked Questions</a></li>               
+                                 <li><a href="javascript:;">Terms & Conditions</a></li>                
+                                 <li><a href="javascript:;">Privacy Policy</a></li>               
+                                  <li><a href="javascript:;">Report a Payment Issue</a></li>             
+                                 </ul>           
+                                 </div>          
+                                </div>        
+                              </div>     
+                             </div>      
+                             <div class="border-top">       
+                                <h6 class="text-center mt-3" style="color: rgb(0, 0, 0); padding-top: 30px;">Copyright ©2020 All rights reserved        
+                            </h6>     
+                           </div>    
+                          </footer>  
+                        </section>  
+                        <a id="top"></a>
+                        <a href="#" style="text-decoration: none;"><img src="Images/top.png" alt="" style="width: 60px;
+                        margin-left: 1200px;
+                        position: fixed;
+                        bottom: -4px;right: 10px;border-radius: 50%;"></a>
+ </body>
+</html> 

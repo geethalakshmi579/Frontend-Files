@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="constyle.css">
+</head>
+<body>
+     <!--Header-->
+   <nav style="box-shadow: 10px 10px 10px 10px rgb(143, 141, 141);">
+    <ul>
+        <li class="logo">Ikart</li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productpage.html">Products</a></li>
+            <li><a href="categories.html">Category</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </div>
+        <li class="search-icon">
+            <input type="search" placeholder="Search">
+            <label class="icon">
+              <span class="fas fa-search"></span>
+            </label>
+            <li><a href="cartpage.html"><img src="Images/cart1.png" alt="" style="width: 50px;border-radius: 50%;margin-left: 30px;"></a></li>
+          </li>
+    </ul>
+</nav>
+<script>
+    $('nav ul li.btn span').click(function(){
+      $('nav ul div.items').toggleClass("show");
+      $('nav ul li.btn span').toggleClass("show");
+    });
+  </script>
+  <!--Ending of Header-->
+
+  <!-- ==============contact starts here============== -->
+<section class="contact py-5 my-5" id="contact">
+    <div class="contain">
+    <div class="section_title text-center mb-5">
+    <h1 class="text-capitalize" style="color: black;margin-left: 300px;text-decoration: underline;">Contact Us</h1>
+    </div>
+    <div class="row mb-5" style="display: flex;">
+    <div class="col-md-4 col-12">
+    <div class="border border-success rounded shadow text-center p-3">
+    <div class="mb-4">
+    <i class="fas fa-phone-alt fa-3x"></i>
+    </div>
+    <div>
+    <h3>Let's Talk</h3>
+    <p><b>Phone:</b> +91-9876543210</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-12">
+<div class="border border-success rounded shadow text-center p-3">
+<div class="mb-4">
+<i class="fas fa-envelope-open fa-3x"></i>
+</div>
+<div>
+<h3>Drop a Line</h3>
+<p><b>Email:</b> xyz@gmail.com</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-12">
+<div class="border border-success rounded shadow text-center p-3">
+<div class="mb-4">
+<i class="far fa-life-ring fa-3x"></i>
+</div>
+<div>
+<h3>24x7 Support</h3>
+<p><b>Customer:</b> 1800 101 303</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row" style="width: 500px;margin-left: 180px;
+  margin-top: 70px;height: 310px;padding: 20px;box-shadow: 2px 2px 2px 2px rgb(182, 180, 180);">
+<div class="col-md-8 col-10 mx-auto mb-3 my-5 py-5 border shadow">
+<h3 class="text-center mb-3" style="margin-left: 150px;">Form</h3>
+<form action="contact.html" method="POST" id="form">
+<div class="form-group">
+<label>Name</label>
+<input name="name" id="name" type="text" placeholder="Name" class="form-control">
+</div>
+<div class="form-group">
+<label>Email address</label>
+<input name="email" id="email" type="email" placeholder="Email" class="form-control">
+</div>
+<div class="form-group">
+<label>Message</label>
+<textarea name="msg" id="msg" placeholder="Message"></textarea>
+</div>
+<button type="submit" class="btn btn-primary btn-block">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ==============contact ends here============== -->
+
+  <!--Footer-->
+<section class="footer_section pt-5 pb-2" id="footer_section">    
+    <footer>      
+      <div class="container" style=" height: 220px; background-color: rgb(184, 182, 179);padding-top: 30px;margin-top: 50px;">       
+         <div class="row" style="display: flex;">          
+           <div class="col-md-3 col-6 pl-5 pl-small-15" style=" width: 300px; height: 165px; margin-left: 110px;">           
+              <div class="footer_title">              
+                <a href="#"><img src="Images/icon.jpg" width="50px; class="img img-fluid" alt="logo" style="padding-right: 20px;margin-left: 120px;"></a>           
+               </div>           
+                <div style="color: black;padding-top: 5px;font-size: 15px;">             
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam estillum ipsum quas ad              dignissimos magni veritatis natus voluptatem.           
+                   </div>         
+                   </div>         
+                    <div class="col-md-3 col-6" style="margin-left: 60px;">           
+                       <div class="footer_title pt-3 mb-3">             
+                          <h3 style="padding-left: 50px; padding-bottom: 10px;color: black;">Quick Links</h3>            
+                        </div>            
+                        <div class="footer_links">             
+                           <ul class="f">               
+                             <li><a href="about.html">About</a></li>               
+                             <li><a href="javascript:;" >Offers & Discounts</a></li>               
+                            <li><a href="javascript:;" >Get Coupon</a></li>               
+                              <li><a href="contact.html" >Contact Us</a></li>             
+                             </ul>           
+                             </div>          
+                          </div>
+          <div class="col-md-3 col-6" style="padding-left: 70px;">          
+             <div class="footer_title pt-3 mb-3">             
+                <h3 style="padding-left: 50px; padding-bottom: 10px;color: black;">New Products</h3>            
+              </div>           
+               <div class="footer_links">             
+                  <ul class="f">               
+                     <li><a href="javascript:;" >Woman Cloth</a></li>                
+                     <li><a href="javascript:;" >Fashion Accessories</a></li>               
+                      <li><a href="javascript:;" >Man Accessories</a></li>               
+                       <li><a href="javascript:;" >Rubber made Toys</a></li>             
+                       </ul>           
+                       </div>          
+                      </div>         
+                       <div class="col-md-3 col-6" style="padding-left: 80px;">            
+                         <div class="footer_title pt-3 mb-3">              
+                           <h3 style="padding-left: 50px; padding-bottom: 10px;color: black;">Support</h3>            
+                          </div>            
+                          <div class="footer_links">             
+                             <ul class="f">               
+                                <li><a href="javascript:;" >Frequently Asked Questions</a></li>               
+                                 <li><a href="javascript:;" >Terms & Conditions</a></li>                
+                                 <li><a href="javascript:;" >Privacy Policy</a></li>               
+                                  <li><a href="javascript:;" >Report a Payment Issue</a></li>             
+                                 </ul>           
+                                 </div>          
+                                </div>        
+                              </div>     
+                             </div>      
+                             <div class="border-top">       
+                                <h6 class="text-center mt-3" style="color: rgb(0, 0, 0); padding-top: 30px;margin-left: 670px;">Copyright ©2020 All rights reserved        
+                            </h6>     
+                           </div>    
+                          </footer>  
+                        </section>
+                        <a id="top"></a>
+                        <a href="#" style="text-decoration: none;"><img src="Images/top.png" alt="" style="width: 60px;
+                        margin-left: 1200px;
+                        position: fixed;
+                        bottom: -4px;right: 10px;border-radius: 50%;"></a>
+</body>
+</html>

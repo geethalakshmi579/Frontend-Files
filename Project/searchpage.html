@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search page</title>
+    <link rel="stylesheet" href="searchstyle.css">
+</head>
+<body>
+    <!--Header-->
+   <nav style="box-shadow: 10px 10px 10px 10px rgb(143, 141, 141);">
+    <ul>
+        <li class="logo">Ikart</li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productpage.html">Products</a></li>
+            <li><a href="categories.html">Category</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </div>
+        <li class="search-icon">
+            <input type="search" placeholder="Search">
+            <label class="icon">
+              <span class="fas fa-search"></span>
+            </label>
+            <li><a href="cartpage.html"><img src="Images/cart1.png" alt="" style="width: 50px;border-radius: 50%;margin-left: 50px;"></a></li>
+          </li>
+    </ul>
+</nav>
+<script>
+    $('nav ul li.btn span').click(function(){
+      $('nav ul div.items').toggleClass("show");
+      $('nav ul li.btn span').toggleClass("show");
+    });
+  </script>
+  <!--Ending of Header-->
+
+  <!-- ==============search section ends here============== -->
+<section class="search_section py-5 my-5" id="search_section">
+    <div class="contain">
+      <div class="title text-center mb-5">
+        <h2><i class="far fa-file mr-2"></i>Search</h2>
+        </div>
+    <div class="row">
+    <!-- BEGIN RESULT -->
+    <div class="col-md-10 mx-auto">
+    <!-- BEGIN SEARCH INPUT -->
+    <div class="input-group">
+    <input type="text" class="form-control" value="xyz">
+    <span class="input-group-btn">
+        <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+            </span>
+            </div>
+            <!-- END SEARCH INPUT -->
+            <small>Showing all results matching "xyz"</small>
+            <!-- BEGIN TABLE RESULT -->
+            <div class="table-responsive mt-3">
+            <table class="table table-hover">
+            <tbody class="border-bottom">
+            <tr>
+            <td class="number text-center">1</td>
+            <td class="image"><img src="Images/p1.jpg" width="100px" class="imgg img-fluid" alt=""></td>
+            <td class="product"><strong>Product 1</strong><br>This is the
+            product description.
+            </td>
+            <td class="rate text-right"><span><i class="fa fa-star"></i><i
+            class="fa fa-star"></i><i class="fa fa-star"></i><i
+            class="fa fa-star"></i><i class="fa
+            fa-star-half-o"></i></span></td>
+            <td class="price text-right">₹350</td>
+            </tr>
+            <tr>
+            <td class="number text-center">2</td>
+            <td class="image"><img src="Images/p11.jpg"
+            width="100px"
+            class="imgg img-fluid" alt=""></td>
+            <td class="product"><strong>Product 1</strong><br>This is the
+            product description.
+            </td>
+            <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star"></i><i class="fa
+                fa-star-half-o"></i></span></td>
+                <td class="price text-right">₹350</td>
+                </tr>
+                <tr>
+                <td class="number text-center">3</td>
+                <td class="image"><img src="Images/p111.jpg"
+                width="100px"
+                class="imgg img-fluid" alt=""></td>
+                <td class="product"><strong>Product 1</strong><br>This is the
+                product description.
+                </td>
+                <td class="rate text-right"><span><i class="fa fa-star"></i><i
+                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star"></i><i class="fa
+                fa-star-half-o"></i></span></td>
+                <td class="price text-right">₹350</td>
+                </tr>
+                </tbody>
+                </table>
+                </div>
+                <!-- END TABLE RESULT -->
+                </div>
+                <!-- END RESULT -->
+                </div>
+                </div>
+                </section>
+                <!-- ==============search section ends here============== -->            
+   <!--Footer-->
+   <section class="footer_section pt-5 pb-2" id="footer_section" style="margin-top: 200px;">    
+    <footer>      
+      <div class="container" style=" height: 200px; background-color: rgb(184, 182, 179);padding-top: 30px;margin-top: 50px;">       
+         <div class="row" style="display: flex;">          
+           <div class="col-md-3 col-6 pl-5 pl-small-15" style=" width: 300px; height: 165px; margin-left: 110px;">           
+              <div class="footer_title">              
+                <a href="#"><img src="Images/icon.jpg" width="50px; class="img img-fluid"  alt="logo" style="padding-right: 20px;margin-left: 120px;"></a>           
+               </div>           
+                <div style="color: black;padding-top: 5px;font-size: 15px;">             
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, totam estillum ipsum quas ad              dignissimos magni veritatis natus voluptatem.           
+                   </div>         
+                   </div>         
+                    <div class="col-md-3 col-6" style="margin-left: 60px;">           
+                       <div class="footer_title pt-3 mb-3">             
+                          <h3 style="padding-left: 50px; padding-bottom: 10px;color: black;">Quick Links</h3>            
+                        </div>            
+                        <div class="footer_links">             
+                           <ul id="f">               
+                             <li><a href="about.html" >About</a></li>               
+                             <li><a href="javascript:;" >Offers & Discounts</a></li>               
+                            <li><a href="javascript:;" >Get Coupon</a></li>               
+                              <li><a href="contact.html" >Contact Us</a></li>             
+                             </ul>           
+                             </div>          
+                          </div>
+          <div class="col-md-3 col-6" style="padding-left: 70px;">          
+             <div class="footer_title pt-3 mb-3">             
+                <h3 style="padding-left: 50px; padding-bottom: 10px;color: black;">New Products</h3>            
+              </div>           
+               <div class="footer_links">             
+                  <ul id="f">               
+                     <li><a href="javascript:;" >Woman Cloth</a></li>                
+                     <li><a href="javascript:;" >Fashion Accessories</a></li>               
+                      <li><a href="javascript:;" >Man Accessories</a></li>               
+                       <li><a href="javascript:;" >Rubber made Toys</a></li>             
+                       </ul>           
+                       </div>          
+                      </div>         
+                       <div class="col-md-3 col-6" style="padding-left: 80px;">            
+                         <div class="footer_title pt-3 mb-3">              
+                           <h3 style="padding-left: 50px; padding-bottom: 10px;color: black;">Support</h3>            
+                          </div>            
+                          <div class="footer_links">             
+                             <ul id="f">               
+                                <li><a href="javascript:;" >Frequently Asked Questions</a></li>               
+                                 <li><a href="javascript:;" >Terms & Conditions</a></li>                
+                                 <li><a href="javascript:;" >Privacy Policy</a></li>               
+                                  <li><a href="javascript:;" >Report a Payment Issue</a></li>             
+                                 </ul>           
+                                 </div>          
+                                </div>        
+                              </div>     
+                             </div>      
+                             <div class="border-top">       
+                                <h6 class="text-center mt-3" style="color: rgb(0, 0, 0); padding-top: 30px;margin-left: 650px;">Copyright ©2020 All rights reserved        
+                            </h6>     
+                           </div>    
+                          </footer>  
+                        </section>  
+                        <a id="top"></a>
+                        <a href="#" style="text-decoration: none;"><img src="Images/top.png" alt="" style="width: 60px;
+                        margin-left: 1200px;
+                        position: fixed;
+                        bottom: -4px;right: 10px;border-radius: 50%;"></a>
+</body>
+</html>
